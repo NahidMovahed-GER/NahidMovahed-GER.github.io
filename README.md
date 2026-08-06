@@ -1,2 +1,3 @@
-# NahidMovahed-GER.github.io
-Professional Portfolio | IT Consultant | Data Integration | Data Analytics
+# Nahid Movahed Portfolio
+
+Professional portfolio website built with HTML, CSS and JavaScript.
