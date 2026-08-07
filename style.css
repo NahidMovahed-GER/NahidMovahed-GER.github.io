@@ -5,15 +5,15 @@
 }
 
 :root {
-  --ink: #172033;
-  --muted: #5d6678;
-  --blue: #235a86;
-  --blue-dark: #143c5c;
-  --blue-soft: #eaf2f8;
-  --paper: #fbfaf7;
+  --ink: #102A43;
+  --muted: #52677A;
+  --blue: #2F78B7;
+  --blue-dark: #0B2E4F;
+  --blue-soft: #E8F4FB;
+  --paper: #F8FBFD;
   --white: #ffffff;
-  --line: #dfe5eb;
-  --shadow: 0 18px 50px rgba(29, 51, 73, 0.10);
+  --line: #D6E5F0;
+  --shadow: 0 18px 50px rgba(11, 46, 79, 0.12);
 }
 
 html {
@@ -45,9 +45,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(251, 250, 247, 0.94);
+  background: rgba(248, 251, 253, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(223, 229, 235, 0.8);
+  border-bottom: 1px solid rgba(214, 229, 240, 0.9);
 }
 
 .nav {
@@ -188,17 +188,19 @@ a {
 .portrait-frame {
   width: min(410px, 100%);
   margin-left: auto;
-  padding: 16px;
+  padding: 12px;
   background: white;
   box-shadow: var(--shadow);
-  border-radius: 180px 180px 18px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
 }
 
 .portrait-frame img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 165px 165px 10px 10px;
+  object-position: center top;
+  border-radius: 7px;
 }
 
 .availability-card {
@@ -259,7 +261,7 @@ a {
 }
 
 .section-dark {
-  background: #14263a;
+  background: #0B2E4F;
   color: white;
   padding-top: 110px;
   padding-bottom: 110px;
@@ -414,7 +416,7 @@ a {
 
 .light .section-number,
 .light .eyebrow {
-  color: #8db7d7;
+  color: #9ED1F3;
 }
 
 .skills-grid {
@@ -430,12 +432,12 @@ a {
 }
 
 .skill-group h3 {
-  color: #a8cce7;
+  color: #A9D7F5;
   margin-bottom: 12px;
 }
 
 .skill-group p {
-  color: #d7e0e8;
+  color: #DCEAF4;
 }
 
 .education-grid {
@@ -502,7 +504,7 @@ a {
 }
 
 footer {
-  background: #0e1c2c;
+  background: #071F36;
   color: #b9c7d3;
   padding: 24px 0;
 }
