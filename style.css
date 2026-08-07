@@ -92,9 +92,9 @@ a {
 .hero {
   min-height: 620px;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 64px;
+  gap: 58px;
   padding-top: 58px;
   padding-bottom: 58px;
 }
@@ -189,7 +189,7 @@ a {
 }
 
 .portrait-frame {
-  width: min(455px, 100%);
+  width: min(485px, 100%);
   margin-left: auto;
   padding: 11px;
   background: white;
@@ -207,7 +207,7 @@ a {
 }
 
 .professional-focus-card {
-  width: min(455px, 100%);
+  width: min(485px, 100%);
   background: var(--blue-dark);
   color: white;
   padding: 15px 20px;
@@ -621,7 +621,7 @@ footer {
 
   .professional-focus-card {
     margin: 14px auto 0;
-    width: min(455px, 100%);
+    width: min(485px, 100%);
   }
 
   .footer-content {
@@ -698,5 +698,26 @@ footer {
 
   .portrait-frame {
     margin: 0 auto;
+  }
+}
+
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-tech {
+  color: #8fa6b9;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 680px) {
+  .footer-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 }
