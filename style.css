@@ -90,13 +90,13 @@ a {
 }
 
 .hero {
-  min-height: 690px;
+  min-height: 620px;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
-  gap: 80px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  gap: 64px;
+  padding-top: 58px;
+  padding-bottom: 58px;
 }
 
 .eyebrow {
@@ -182,17 +182,20 @@ a {
 }
 
 .hero-visual {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
 }
 
 .portrait-frame {
-  width: min(410px, 100%);
+  width: min(455px, 100%);
   margin-left: auto;
-  padding: 12px;
+  padding: 11px;
   background: white;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .portrait-frame img {
@@ -200,29 +203,27 @@ a {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
+  border-radius: 5px;
+}
+
+.professional-focus-card {
+  width: min(455px, 100%);
+  background: var(--blue-dark);
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 10px 28px rgba(11, 46, 79, 0.16);
   border-radius: 7px;
 }
 
-.availability-card {
-  position: absolute;
-  left: -22px;
-  bottom: 35px;
-  background: var(--blue-dark);
-  color: white;
-  padding: 18px 22px;
-  box-shadow: var(--shadow);
-  border-radius: 8px;
-}
-
-.availability-card strong,
-.availability-card span {
+.professional-focus-card strong,
+.professional-focus-card span {
   display: block;
 }
 
-.availability-card span {
-  color: #cfdfeb;
+.professional-focus-card span {
+  color: #d9e9f5;
   font-size: 0.84rem;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .focus-strip {
@@ -250,28 +251,28 @@ a {
 }
 
 .section {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 .section-soft {
   background: var(--blue-soft);
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 .section-dark {
   background: #0B2E4F;
   color: white;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 .section-heading {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
 }
 
 .section-number {
@@ -291,7 +292,7 @@ a {
 .about-grid {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
-  gap: 70px;
+  gap: 56px;
 }
 
 .about-copy p + p {
@@ -469,7 +470,7 @@ a {
 .contact-section {
   background: var(--blue);
   color: white;
-  padding: 90px 0;
+  padding: 78px 0;
 }
 
 .contact-grid {
@@ -535,8 +536,8 @@ footer {
     margin: 0 auto;
   }
 
-  .availability-card {
-    left: 10%;
+  .professional-focus-card {
+    margin: 0 auto;
   }
 
   .focus-grid {
@@ -618,10 +619,9 @@ footer {
     gap: 14px;
   }
 
-  .availability-card {
-    position: static;
-    margin: 16px auto 0;
-    width: min(410px, 100%);
+  .professional-focus-card {
+    margin: 14px auto 0;
+    width: min(455px, 100%);
   }
 
   .footer-content {
@@ -633,29 +633,70 @@ footer {
 .language-switch {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 4px;
   margin-left: auto;
-  margin-right: 6px;
-  padding: 5px 9px;
+  margin-right: 8px;
+  padding: 3px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--white);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
+  box-shadow: 0 5px 16px rgba(11, 46, 79, 0.05);
 }
 .language-switch a {
+  min-width: 30px;
+  text-align: center;
   color: var(--muted);
   text-decoration: none;
+  padding: 4px 7px;
+  border-radius: 999px;
 }
-.language-switch a:hover,
-.language-switch a.active {
+.language-switch a:hover {
   color: var(--blue);
 }
 .language-switch a.active {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: white;
+  background: var(--blue);
 }
-.language-switch span { color: #a5adba; }
+.language-switch span {
+  display: none;
+}
 @media (max-width: 680px) {
   .language-switch { margin-left: auto; margin-right: 10px; }
+}
+
+
+/* Final visual polish */
+.nav-links a,
+.button,
+.project-card,
+.experience-card,
+.strengths-card,
+.education-grid article {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.experience-card:hover,
+.strengths-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.education-grid article:hover {
+  transform: translateY(-2px);
+}
+
+.hero-copy {
+  max-width: 660px;
+}
+
+@media (max-width: 900px) {
+  .hero-visual {
+    align-items: center;
+  }
+
+  .portrait-frame {
+    margin: 0 auto;
+  }
 }
