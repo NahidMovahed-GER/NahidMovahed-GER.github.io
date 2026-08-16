@@ -721,3 +721,96 @@ footer {
     gap: 4px;
   }
 }
+
+
+/* Freelance availability */
+.freelance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 2px 0 18px;
+  padding: 8px 13px;
+  border: 1px solid #b9d7ea;
+  border-radius: 999px;
+  background: #eef8fd;
+  color: var(--blue-dark);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0 4px rgba(47, 120, 183, 0.12);
+}
+
+.freelance-section {
+  background: #f3f9fd;
+  border-top: 1px solid var(--line);
+}
+
+.freelance-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.freelance-intro p:not(.lead) {
+  color: var(--muted);
+  margin-top: 18px;
+}
+
+.freelance-intro .button {
+  margin-top: 28px;
+}
+
+.freelance-services {
+  display: grid;
+  gap: 12px;
+}
+
+.service-item {
+  position: relative;
+  padding: 18px 20px 18px 52px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 7px 20px rgba(11, 46, 79, 0.05);
+}
+
+.service-item::before {
+  content: "✓";
+  position: absolute;
+  left: 19px;
+  top: 17px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.language-switch a {
+  min-width: 46px;
+}
+
+@media (max-width: 900px) {
+  .freelance-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 680px) {
+  .freelance-badge {
+    border-radius: 12px;
+    line-height: 1.45;
+  }
+}
