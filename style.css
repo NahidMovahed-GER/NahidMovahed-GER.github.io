@@ -797,10 +797,6 @@ footer {
   font-size: 0.8rem;
 }
 
-.language-switch a {
-  min-width: 46px;
-}
-
 @media (max-width: 900px) {
   .freelance-grid {
     grid-template-columns: 1fr;
