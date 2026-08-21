@@ -13,3 +13,7 @@ Includes:
 - Professional experience, projects, skills and education
 
 Final refinement: restored clean DE | EN switch and aligned the English contact text with freelance availability.
+
+- Impressum and privacy policy pages
+- Legal footer links
+- Remote Google Fonts removed; system fonts used instead
