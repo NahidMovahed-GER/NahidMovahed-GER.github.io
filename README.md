@@ -17,3 +17,6 @@ Final refinement: restored clean DE | EN switch and aligned the English contact 
 - Impressum and privacy policy pages
 - Legal footer links
 - Remote Google Fonts removed; system fonts used instead
+
+- Business Intelligence added as an adjacent competence
+- Power BI, reporting and dashboarding included
