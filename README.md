@@ -20,3 +20,7 @@ Final refinement: restored clean DE | EN switch and aligned the English contact 
 
 - Business Intelligence added as an adjacent competence
 - Power BI, reporting and dashboarding included
+
+- Repositioned as Data Navigator with customer-focused structure
+- Added challenge, thesis, approach and service sections
+- Retained projects, professional experience, technologies, education and legal pages
