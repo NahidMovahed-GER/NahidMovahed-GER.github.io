@@ -1002,3 +1002,9 @@ footer {
   .process-grid div { min-height: 95px; }
   .hero h1.brand-title { font-size: 3.4rem; }
 }
+
+/* Final Data Navigator refinements */
+.hero-claim {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  max-width: 620px;
+}

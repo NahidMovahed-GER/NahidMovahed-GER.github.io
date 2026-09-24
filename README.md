@@ -24,3 +24,7 @@ Final refinement: restored clean DE | EN switch and aligned the English contact 
 - Repositioned as Data Navigator with customer-focused structure
 - Added challenge, thesis, approach and service sections
 - Retained projects, professional experience, technologies, education and legal pages
+
+- Final positioning refinement: Business Intelligence & Reporting
+- Softer, customer-oriented project inquiry CTA
+- More compact hero claim
